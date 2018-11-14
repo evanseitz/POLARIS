@@ -1,4 +1,4 @@
-# POLARIS: Path of least action recursive survey
+# POLARIS
 algorithm for path of least action analysis on energy landscapes
 
 # INSTALLATION
