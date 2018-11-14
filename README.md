@@ -18,9 +18,9 @@ install packages in environment:
   pip install PyQt5
   pip install matplotlib
   conda install -c anaconda psutil
-run program from polaris_GUI.py directory via:
+run program from polaris_FE.py (frontend) directory via:
 
-	python polaris_GUI.py
+	python polaris_FE.py
 when done using program, exit environment via:
 
 	source deactivate
@@ -39,9 +39,9 @@ install packages in environment:
   pip install PyQt5
   pip install matplotlib
   conda install -c anaconda psutil
-run program from polaris_GUI.py directory via:
+run program from polaris_FE.py (frontend) directory via:
 
-	python polaris_GUI.py
+	python polaris_FE.py
 when done using program, exit environment via:
 
 	source deactivate
