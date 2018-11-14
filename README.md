@@ -24,7 +24,8 @@ run program from polaris_FE.py (frontend) directory via:
 when done using program, exit environment via:
 
 	source deactivate
-	
+
+---
 # linux:
 create environment (FOO or whatever name you'd like):
 
