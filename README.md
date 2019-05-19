@@ -1,28 +1,40 @@
 # POLARIS
 algorithm for path of least action analysis on energy landscapes
 
-# INSTALLATION
-first, install latest version of Anaconda: https://www.anaconda.com/download/
+# Installation
+1.  Install latest version of Anaconda: https://www.anaconda.com/download/
 
-create environment:
-
-	conda create --no-default-packages -n POLARIS python=3.7
-	
-open environment:
-
-	source activate POLARIS
-	
-install packages in environment:
-
-	pip install --upgrade pip
-  	pip install PyQt5
-  	pip install matplotlib
- 	conda install -c anaconda psutil
+2.  Use the `.yml` file found within the repository to install the environment for your operating system, via either:
+         
+	    conda env create -f env_linux.yml
+	    
+	    conda env create -f env_mac.yml
 	 
-run program from polaris_FE.py (frontend) directory via:
+    If any problems emerge, try to continue instead with the following commands:
+    
+    2a.  Create environment:
 
-	python polaris_FE.py
+	    conda create --no-default-packages -n ManifoldEM python=3
 	
-when done using program, exit environment via:
+    2b.  Open environment first before installing packages inside:
 
-	source deactivate
+	    source activate polaris
+	
+    2c.  Install packages in environment:
+
+	    pip install --upgrade pip
+  	    pip install PyQt5
+  	    pip install matplotlib
+ 	    conda install -c anaconda psutil
+
+3. If environment not already open, it must be sourced each time before program is run:
+
+	   source activate polaris
+	 
+4. Run program from POLARIS_GUI.py directory via:
+
+	   python POLARIS_GUI.py
+	
+5. When done using program, always exit environment via:
+
+	   source deactivate
