@@ -367,7 +367,8 @@ class P1(QtWidgets.QWidget):
                 P2.processors.clearFocus()
                 P2.processors.setValue(1)
                 P2.TSW.clearFocus()
-                P2.TSW.setValue(1)
+                #P2.TSW.setValue(1)
+                P2.TSW.setChecked(False)
 
                 for i in P1.coords_x:
                     P1.coords_x[i].setValue(0)
@@ -505,7 +506,7 @@ class P1(QtWidgets.QWidget):
                                     </span>\
                                     <br /><br />" % (u"\u1D62",u"\u1D62",
                                                      flat_xy,flat_R,flat_N,
-                                                     int(P2.TSW.value()),
+                                                     P2.TSW.isChecked(),
                                                      int(P2.processors.value())))                              
             box.setStandardButtons(QMessageBox.Yes|QMessageBox.No)        
             reply = box.exec_()
@@ -516,7 +517,8 @@ class P1(QtWidgets.QWidget):
                 POLARIS_BE.user_R = flat_R
                 POLARIS_BE.user_N = flat_N
                 POLARIS_BE.user_proc = int(P2.processors.value())
-                POLARIS_BE.user_rate = int(P2.TSW.value())
+                #POLARIS_BE.user_rate = int(P2.TSW.value())
+                POLARIS_BE.user_rate = P2.TSW.isChecked()
                 POLARIS_BE.init()
 
                 # popup message upon completion:
@@ -708,7 +710,7 @@ class P2(QtWidgets.QWidget):
         P2.processors.setMaximum(multiprocessing.cpu_count())
         layout.addWidget(P2.processors, 12, 3, 1, 1)
         P2.processors.show()
-
+        '''
         P2.TSW = QDoubleSpinBox(self)
         P2.TSW.setFocus(False)
         P2.TSW.setPrefix('Transition State Weighting: ')
@@ -716,6 +718,13 @@ class P2(QtWidgets.QWidget):
         P2.TSW.setDecimals(0)
         P2.TSW.setMinimum(1)
         P2.TSW.setMaximum(2)
+        layout.addWidget(P2.TSW, 12, 1, 1, 1)
+        P2.TSW.show()
+        '''
+        P2.TSW = QCheckBox('Transition State Weighting')
+        P2.TSW.setFont(font_standard)
+        P2.TSW.setChecked(False)
+        #P2.TSW.setEnabled(False)
         layout.addWidget(P2.TSW, 12, 1, 1, 1)
         P2.TSW.show()
 
