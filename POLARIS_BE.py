@@ -28,7 +28,7 @@ def user():
     user_R = [] #user permutational orders
     user_N = [] #user segmentation depths
     user_proc = 1 #user processor count
-    user_rate = 1 #transition rate weighting
+    user_rate = False #transition rate weighting
     pyDir = os.path.dirname(os.path.realpath(__file__)) #python file location
     outDir = os.path.join(pyDir, 'data_output') #output directory
     if not os.path.exists(outDir):
@@ -150,10 +150,11 @@ def init():
     except ValueError:
         LS2d = loadtxt(user_df,float)
 
-    if user_rate > 1:
+    if user_rate is True: #transition state weighting enabled
         idx = 0
         for i in LS2d:
-            LS2d[idx] = LS2d[idx]**(user_rate)
+#            LS2d[idx] = LS2d[idx]**2
+            LS2d[idx] = 2**(LS2d[idx]) - 1
             idx += 1
 
     df_framed, lenX, sideX, sideY = add_border(LS2d) #reframe data
@@ -355,10 +356,9 @@ def init():
         if (len(blocks_min) - R) < 0:
             # abort function:
             minLine = [[0,0],[0,0],[0,0]]
-            minLinePtsAll = [[0,0]]
             minLineEnergy = 999999999
             print('#  INSUFFICIENT POINTS')
-            return minLine, minLinePtsAll, minLineEnergy
+            return minLine, minLineEnergy
 
         else: #run through permutations
             tempLines = []
@@ -580,10 +580,11 @@ def init():
     master_all = slicer(master_all) #remove duplicate points (if ever any)
     master_all = wiggler(master_all) #optimize line via local energy perturbation
 
-    if user_rate > 1:
+    if user_rate is True:
         idx = 0
         for i in LS2d:
-            LS2d[idx] = LS2d[idx]**(1/(user_rate))
+            #LS2d[idx] = LS2d[idx]**(1/2)
+            LS2d[idx] = np.log(LS2d[idx]+1)/np.log(2)
             idx += 1
 
     final_x = []
