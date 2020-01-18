@@ -44,6 +44,9 @@ This repository contains the software implementation for our paper **POLARIS: pa
 ### Attribution:
 Please cite `E. Seitz and J. Frank (2019); https://www.biorxiv.org/content/10.1101/633628v1` if you find this code useful in your research.
 
+[![DOI](https://zenodo.org/badge/157617482.svg)](https://zenodo.org/badge/latestdoi/157617482)
+
+
 ### License:
 Copyright 2018-2020 Evan Seitz
 
