@@ -944,7 +944,7 @@ class MainWindow(QtWidgets.QMainWindow):
         if iconDir:
             box.setIconPixmap(QtGui.QPixmap(iconDir))
         box.setInformativeText('<span style="font-weight:normal;">\
-                                %s Evan Elliott Seitz, 2018-2019\
+                                %s Evan Elliott Seitz, 2018-2020\
                                 <br /><br />\
                                 <b>LICENSE:</b>\
                                 <br /><br />\
@@ -966,7 +966,7 @@ class MainWindow(QtWidgets.QMainWindow):
                                 evan.e.seitz@gmail.com\
                                 <br /><br />\
                                 <b>Cite:</b>\
-                                www.temp.com\
+                                https://www.biorxiv.org/content/10.1101/633628v1\
                                 </span>' % (u"\u00A9"))
         box.setStandardButtons(QMessageBox.Ok)        
         ret = box.exec_()
