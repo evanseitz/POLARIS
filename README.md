@@ -42,7 +42,7 @@ This repository contains the software implementation for our paper **POLARIS: pa
 	   source deactivate
 
 ### Attribution:
-Please cite `E. Seitz and J. Frank (2019) <https://www.biorxiv.org/content/10.1101/633628v1>` if you find this code useful in your research.
+Please cite `E. Seitz and J. Frank (2019); https://www.biorxiv.org/content/10.1101/633628v1` if you find this code useful in your research.
 
 ### License:
 Copyright 2018-2020 Evan Seitz
