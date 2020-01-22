@@ -16,7 +16,7 @@ This repository contains the software implementation for our paper **POLARIS: pa
     
     2a.  Create environment:
 
-	    conda create --no-default-packages -n ManifoldEM python=3
+	    conda create --no-default-packages -n polaris python=3
 	
     2b.  Open environment first before installing packages inside:
 
