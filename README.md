@@ -20,7 +20,7 @@ This repository contains the software implementation for our paper **POLARIS: pa
 	
     2b.  Open environment first before installing packages inside:
 
-	    source activate polaris
+	    conda activate polaris
 	
     2c.  Install packages in environment:
 
@@ -31,7 +31,7 @@ This repository contains the software implementation for our paper **POLARIS: pa
 
 3. If environment not already open, it must be sourced each time before program is run:
 
-	   source activate polaris
+	   conda activate polaris
 	 
 4. Run program from POLARIS_GUI.py directory via:
 
@@ -39,7 +39,7 @@ This repository contains the software implementation for our paper **POLARIS: pa
 	
 5. When done using program, always exit environment via:
 
-	   source deactivate
+	   conda deactivate
 
 ### Attribution:
 Please cite `E. Seitz and J. Frank (2019); https://www.biorxiv.org/content/10.1101/633628v1` if you find this code useful in your research.
