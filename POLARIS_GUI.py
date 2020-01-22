@@ -90,9 +90,9 @@ class MplCanvas(FigCanvas):
 
             for j,k in P1.points_xy:
                 FigCanvas.axes.scatter([j],[k], c='k', s=5)
-                FigCanvas.axes.hold(True)
+                #FigCanvas.axes.hold(True)
                 FigCanvas.axes.scatter([j],[k], c='w', s=.5)
-                FigCanvas.axes.hold(True)
+                #FigCanvas.axes.hold(True)
             im = FigCanvas.axes.imshow(LS, cmap='jet', origin='lower', )
             #FigCanvas.axes.grid(True)
             FigCanvas.axes.format_coord = lambda x, y: "x={0:.0f}, y={0:.0f}".format(x,y)
