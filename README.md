@@ -1,7 +1,7 @@
 # README
 ## POLARIS: Path of Least Action Recursive Survey
 
-This repository contains the software implementation for our paper **POLARIS: path of least action analysis on energy landscapes** (Seitz, Frank, doi: 10.1021/acs.jcim.9b01108). It contains tools to apply the discussed methods to energy landscapes.
+This repository contains the software implementation for our paper **POLARIS: path of least action analysis on energy landscapes** (Seitz, Frank; doi: 10.1021/acs.jcim.9b01108). It contains tools to apply the discussed methods to energy landscapes.
 
 ### Installation
 1.  Install latest version of Anaconda: https://www.anaconda.com/download/
