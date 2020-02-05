@@ -965,8 +965,8 @@ class MainWindow(QtWidgets.QMainWindow):
                                 <b>Contact:</b>\
                                 evan.e.seitz@gmail.com\
                                 <br /><br />\
-                                <b>Cite:</b>\
-                                https://www.biorxiv.org/content/10.1101/633628v1\
+                                <b>DOI:</b>\
+                                10.1021/acs.jcim.9b01108
                                 </span>' % (u"\u00A9"))
         box.setStandardButtons(QMessageBox.Ok)        
         ret = box.exec_()
