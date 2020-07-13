@@ -42,9 +42,7 @@ This repository contains the software implementation for our paper **POLARIS: pa
 	   conda deactivate
 
 ### Attribution:
-Please cite our paper `E. Seitz and J. Frank (2019); doi: 10.1021/acs.jcim.9b01108` if you find this code useful in your research. If additionaly needed, this online repository can be cited via:
-
-[![DOI](https://zenodo.org/badge/157617482.svg)](https://zenodo.org/badge/latestdoi/157617482)
+Please cite `E. Seitz and J. Frank (2019); doi: 10.1021/acs.jcim.9b01108` if you find this code useful in your research. This GitHub repository can additionally be cited via: [![DOI](https://zenodo.org/badge/157617482.svg)](https://zenodo.org/badge/latestdoi/157617482)
 
 
 ### License:
