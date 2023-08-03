@@ -966,7 +966,7 @@ class MainWindow(QtWidgets.QMainWindow):
                                 evan.e.seitz@gmail.com\
                                 <br /><br />\
                                 <b>DOI:</b>\
-                                10.1021/acs.jcim.9b01108
+                                10.1021/acs.jcim.9b01108\
                                 </span>' % (u"\u00A9"))
         box.setStandardButtons(QMessageBox.Ok)        
         ret = box.exec_()
